@@ -19,7 +19,7 @@ public class Main {
         String choice = read.nextLine();
         long answer;
         if (choice.equals("M")){
-            answer = Math.multiplyExact(num1, num2);
+            answer = num1*num2;//Math.multiplyExact(num1, num2);
             System.out.println(num1 + " * " + num2 + " = " + answer);
         }
 
