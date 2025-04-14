@@ -23,9 +23,7 @@ public class Main {
         name = read.nextLine();
         System.out.println("Enter hours worked: ");
         hours = read.nextDouble();
-        read.nextLine();
         System.out.println("Enter pay rate: ");
         pay = read.nextDouble();
-        read.nextLine();
     }
 }
