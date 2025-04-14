@@ -9,6 +9,7 @@ public class Main {
         float regularPrice = 5.001f;
         float largePrice = 8.95f;
 
+
         float studentDiscount = 0.1f;
         float seniorDiscount = 0.2f;
 
@@ -41,6 +42,9 @@ public class Main {
         }else{
             System.out.println("Invalid menu selection. ");
         }
+
+        _basePrice = calcLoadedSandwich(_read, sizeSelect, _basePrice);
+
         return _basePrice;
     }
 
@@ -56,5 +60,24 @@ public class Main {
         }
 
         return  discount;
+    }
+
+    public static float calcLoadedSandwich(Scanner _read, int _sizeSelect, float _basePrice){
+
+        float regularLoadedPrice = 1.00f;
+        float largeLoadedPrice = 1.75f;
+
+        System.out.println("Would you like your sandwich Loaded?\nEnter 1 for Yes, 2 for No: ");
+        int loaded = _read.nextInt();
+
+        if (loaded == 1){
+            if (_sizeSelect == 1){ //if regular loaded sandwich
+                _basePrice += regularLoadedPrice;
+            }else{
+                _basePrice += largeLoadedPrice;
+            }
+        }
+
+        return _basePrice;
     }
 }
