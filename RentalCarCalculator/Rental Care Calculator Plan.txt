@@ -1,0 +1,37 @@
+Variables
+
+String Pickup Date
+
+Int Number of Rental Days
+
+Bool Electronic toll tag 3.95
+
+Bool GPS 2.95
+
+Bool Roadside Assistance 3.95
+
+Int Current Age
+
+
+Constants
+
+Float Basic rental 29.99
+
+Surcharge for drivers under 25 : 30%
+
+Sequence:
+
+Ask for Pickup Date
+Ask for Number of Rental Days
+Check for Electronic toll
+Check for GPS
+Check for Roadside Assistance
+Ask for current age
+
+29.99 * days (rental)
+Add 3.95 * days (Electronic toll)
+Add 2.95 * days (GPS)
+Add 3.95 * days (roadside assistance)
+Calculate and add surcharge 29.99 * 0.3 * days (surcharge)
+
+Display totals
